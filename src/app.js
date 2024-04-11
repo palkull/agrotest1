@@ -11,6 +11,9 @@ hola()
 app.use(cors({origin:"http://localhost:5173",
 credentials: true // Habilitar el envío de credenciales
 }))
+app.use(cors({origin:"https://agro-tech-35q3.onrender.com",
+credentials: true // Habilitar el envío de credenciales
+}))
 
 app.use(morgan('dev'))
 app.use(express.json())
